@@ -1,0 +1,44 @@
+.features {
+  margin: 15rem 0;
+  grid-column: center-start / center-end;
+
+  
+@supports (display:grid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
+}
+
+.feature {
+
+ float: left;
+ width: 33.3333%;
+ margin-bottom: 6rem;
+
+ 
+ @supports (display:grid) {
+  width: auto;
+  margin-bottom:0;
+ }
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 1.2rem;
+  column-gap: 2.4rem;
+
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+
+    grid-row: 1/ span 2;
+  }
+
+  &__text {
+    font-size: 1.7rem;
+  }
+}
+
