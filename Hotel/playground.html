@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Ground</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: aqua;
+    }
+
+    .detail1 {
+      text-align: center;
+      margin: 4%;
+      font-size: xxx-large;
+      font-family:'Ephesis';
+      color: blueviolet;
+      font-weight: bolder;
+      text-shadow: -6px 6px 9px #888888;
+    }
+
+    .img2 {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 3%;
+      margin-bottom: 3%;
+    }
+
+    .foot{
+      display: flex;
+      background-color: #ffe23f;
+      flex-wrap: wrap;
+    }
+
+    .tb1 {
+      width: 33%;
+    align-self: center;
+    text-align: center;
+    padding: 2%;
+    margin: 3% 0%;
+    }
+    .tb2{
+      width: 34%;
+    align-self: center;
+    text-align: center;
+    padding: 2%;
+    margin: 3% 0%;
+    }
+    .tb3{
+      width: 33%;
+    align-self: center;
+    text-align: center;
+    padding: 2%;
+    margin: 3% 0%;
+    }
+
+    .del{
+      text-align: center;
+      font-size: small;
+      color: blue;
+      font-weight:500;
+    }
+
+    .black{
+      display: flex;
+      width: 100%;
+      background-color: rgb(26, 24, 24);
+    }
+
+    p{
+      width: 100%;
+    text-align: center;
+    font: small-caption;
+    color: azure;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+</style>
+
+<body>
+        <!-- header start -->
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div style="background-color: cadetblue" class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><h3 style="font-family: Cursive, Courier, monospace;font-size: xxx-large";>RC HOTEL</h3></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                target="_blank"
+                href="home.html"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                target="_blank"
+                href="about.html"
+                >ABOUT US</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>features</strong>
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" target="_blank" href="food.html">FOOD</a></li>
+                <li><a class="dropdown-item" target="_blank"href="home.html">ROOM BOOKING</a></li>
+                <li><a class="dropdown-item" target="_blank"href="swimming.html">SWIMMING POOL</a></li>
+                <li><a class="dropdown-item" target="_blank"href="playground.html">PLAY GROUND</a></li>
+                <li><a class="dropdown-item" target="_blank"href="parking.html">PARKING</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <strong>PRICING</strong>
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">ACTIVITY</th>
+                      <th scope="col">PRICE</th>
+                      <th scope="col">QUANTITY</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Food</td>
+                      <td>600-5000</td>
+                      <td>per-plate</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Swimming</td>
+                      <td>600-700</td>
+                      <td>per-hour</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Rooms</td>
+                      <td>4500-15000</td>
+                      <td>per-night</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </ul>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+             <!-- header end -->
+
+          <div class="detail1">Make A Very Enjoyable Day For Your OSM Kids</div>
+
+          <div class="img2">
+            <figure class="figure">
+              <img
+                src="images/play1.jpg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+            <figure class="figure">
+              <img
+                src="images/play2.jpg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+            <figure class="figure">
+              <img
+                src="images/play6.jpeg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+            <figure class="figure">
+              <img
+                src="images/play3.jpeg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+            <figure class="figure">
+              <img
+                src="images/play4.jpeg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+            <figure class="figure">
+              <img
+                src="images/play5.jpeg"
+                style="width: 300px;height: 200px;box-shadow: -9px 9px 7px #888888;"
+                class="figure-img img-fluid rounded"
+                alt="A generic square placeholder image with rounded corners in a figure."
+              />
+            </figure>
+
+          </div>
+
+
+
+
+          <!-- footer  -->
+
+  <footer>
+    <div class="foot">
+      <div class="tb1">
+        <div class=" table-hover">
+            <tr >Hours<br><br>
+            <tr >Sun - Thurs : 11:00 AM - 10:30 PM</tr><br><br>
+            <tr >Fri : 11:00 AM - 02:30 PM</tr><br><br>
+            <tr >Sat : closed</tr>
+        </div>
+      </div>
+
+      <div class="tb2">
+        <div class=" table-hover">
+            <tr >Address</tr><br><br>
+            <tr >International institude of </tr><br>
+            <tr >professional studies,</tr><br><br>
+            <tr >DAVV,INDORE</tr><br><br>
+          <div class="del">
+            *Delivery area within 3-4 miles , with minimum order of $20 plus $3 charge for all deliveries.
+          </div>
+        </div>
+      </div>
+
+      <div class="tb3">
+        <div class="table-hover">
+            <tr >"The best Indian Food restaurant I've been to! And that's</tr><br><br>
+            <tr>saying a lot, since I've been to many!"</tr><br><br>
+            <br>
+            <tr>"Amazing food! Great service! Couldn't ask for more! I'll be</tr><br><br>
+            <tr>back again and again!"</tr>
+        </div>
+      </div>
+
+      <div class="black">
+        <p>© Copyright Alex 2021 | Admin</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end  -->
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
